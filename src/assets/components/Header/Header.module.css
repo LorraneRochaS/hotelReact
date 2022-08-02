@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: #082b93;
+    color: #f7f7f7;
+}
+
+.headerContent {
+        
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: calc(100% - 20px);
+}
+
+.userMenu {
+    display: flex;
+    gap: 20px;
+}
