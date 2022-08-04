@@ -1,0 +1,92 @@
+.roomCard {
+  display: flex;
+  width: calc(100% - 0.7rem);
+  height: fit-content;
+  padding: 10px;
+
+  background: #dddedf;
+  border: 1px solid #dedada;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+
+  gap: 10px;
+}
+
+.img {
+  width: 128px;
+  height: 128px;
+  background: #cdcdcd;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  flex-shrink: 0;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  width: fit-content;
+  height: 30px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #082b93;
+}
+
+.date {
+  width: fit-content;
+  height: 25px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+
+  color: #736d6d;
+}
+
+.descr {
+  width: fit-content;
+  height: 58px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+
+  color: #736d6d;
+}
+
+.priceContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #29292e;
+}
