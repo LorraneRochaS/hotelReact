@@ -1,0 +1,7 @@
+.convenience {
+  width: 94px;
+  height: 94px;
+
+  background: var(--color-light);
+  border-radius: 10px;
+}
