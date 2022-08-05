@@ -8,7 +8,7 @@ const SearchBar = () => {
       <div className={S.inputCtn}>
         <div>
           <p>Entrada</p>
-          <input type="date" name="entrada" id="entrada" />
+          <input type="date"  name="entrada" id="entrada" />
         </div>
         <div>
           <p>Saída</p>
