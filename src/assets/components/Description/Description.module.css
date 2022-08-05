@@ -1,5 +1,6 @@
 .descriptionCtn {
   min-width: 405px;
+  max-width: calc(100% - 1rem);
   height: 301px;
 
   padding: 1rem;

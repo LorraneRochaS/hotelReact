@@ -8,6 +8,8 @@ import Title from "./assets/components/Title/Title";
 import Convenience from "./assets/components/Convenience/Convenience";
 import Description from "./assets/components/Description/Description";
 import Paragraph from "./assets/components/Paragraph/Paragraph";
+import Indications from "./assets/pages/Indications/Indications";
+import SearchBar from "./assets/components/SearchBar/SearchBar";
 
 /*
 PROPS
@@ -21,11 +23,8 @@ const Routes = () => {
   return (
     <BrowserRouter>
       <Header />
-      <RoomImg />
-      <Convenience />
-      <Description />
+      <SearchBar />
       
-
       <Switch>
         <Route
           path="/"
