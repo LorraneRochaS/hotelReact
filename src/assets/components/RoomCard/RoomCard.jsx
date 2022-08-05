@@ -19,7 +19,7 @@ const RoomCard = (props) => {
             <h4 className={S.date}>{props.date}</h4>
             <p className={S.descr}>{props.descr}</p>
             <div className={S.priceContainer}>
-                <p className='price'>{props.price}</p>
+                <p className={S.price}>{props.price}</p>
                 <Button text='ver'/>
             </div>
         </div>
