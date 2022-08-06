@@ -11,8 +11,7 @@ import Paragraph from "./assets/components/Paragraph/Paragraph";
 import Indications from "./assets/pages/Indications/Indications";
 import SearchBar from "./assets/components/SearchBar/SearchBar";
 import Guarantees from "./assets/components/Guarantees/Guarantees";
-import Promo from "./assets/Promo/Promo";
-
+import Promo from "./assets/components/Promo/Promo";
 
 /*
 PROPS
@@ -26,10 +25,7 @@ const Routes = () => {
   return (
     <BrowserRouter>
       <Header />
-      <SearchBar />
-      <Guarantees />
-      <Promo />
-      
+
       <Switch>
         <Route
           path="/"
@@ -42,6 +38,8 @@ const Routes = () => {
             />
           }
         />
+        <Route path="/home" element={<Home />} />
+        <Route path="/indicacoes" element={<Indications />} />
       </Switch>
     </BrowserRouter>
   );
