@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap");
 
 :root {
-  --color-one:var(#082B93);
-  --color-two:var(FF7B07);
-  --color-three: var(#EFF1F7);
-  --color-dark: var(#29292E);
-  --color-light: var(#F7F7F7);
+  --color-one: #082B93;
+  --color-two: #FF7B07;
+  --color-three: #EFF1F7;
+  --color-dark: #29292E;
+  --color-light: #F7F7F7;
   
   width: 100%;
   min-height: 100vh;

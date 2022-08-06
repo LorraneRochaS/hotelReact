@@ -1,0 +1,14 @@
+.paragraph {
+    display: flex;    
+    width: 98%;
+    height: fit-content;
+  
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+  
+    color: var(--color-dark);
+  }
+  
