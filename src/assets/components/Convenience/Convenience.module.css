@@ -1,7 +1,28 @@
+.convenienceCtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .convenience {
   width: 94px;
   height: 94px;
+  padding: 20px;
 
   background: var(--color-light);
-  border-radius: 10px;
+  border-radius: 15px;
+}
+.description {
+  width: fit-content;
+  height: 25px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+
+  color: #736d6d;
 }

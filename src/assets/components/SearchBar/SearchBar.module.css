@@ -7,9 +7,10 @@
   align-items: center;
   gap: 10px;
   min-width: 365px;
-  width: calc(100% - 1rem);
+  width: 80%;
+  max-width: 900px;
   height: fit-content;
-  padding: 1rem 0.5rem;
+  padding: 15px;
 
   background: var(--color-light);
   border: 1px solid #dedada;

@@ -1,6 +1,8 @@
 import React from 'react'
 import S from './Button.module.css'
 
+// botao padrao do site
+
 const Button = (props) => {
   return (
     <button className={S.button}>

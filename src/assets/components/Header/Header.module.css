@@ -16,7 +16,7 @@
     justify-content: space-between;
     align-items: center;
     height: 70px;
-    width: calc(100% - 2rem);
+    width: 85%;
 }
 
 .userMenu {
