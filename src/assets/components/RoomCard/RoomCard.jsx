@@ -11,11 +11,12 @@ descr = descriçao
 price = preço */
 
 const RoomCard = (props) => {
+  
   return (
     <div className={S.roomCard}>
-        <img  className={S.img} src={props.img} alt="img do hotel" />
+        <img  className={S.img} src={props.src} alt="img do hotel" />
         <div className={S.infoContainer}>
-            <h3 className={S.titulo}>{props.title}</h3>
+            <h3 className={S.titulo}>Quarto {props.title} </h3>
             <h4 className={S.date}>{props.date}</h4>
             <p className={S.descr}>{props.descr}</p>
             <div className={S.priceContainer}>
