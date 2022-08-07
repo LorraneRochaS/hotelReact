@@ -40,9 +40,10 @@ const Indications = () => {
       
       {!!quartos && quartos.quarto.map((quarto, key) => {
         return (
-          <RoomCard key={key} title={quarto.NUMERO_DO_QUARTO} />
+          <RoomCard src='https://cf.bstatic.com/images/hotel/840x460/631/63184497.jpg' descr='lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utilizado' key={key} title={quarto.NUMERO_DO_QUARTO} class={quarto.CLASSE} />
         )
       })}
+      
     </div>
     
   )
