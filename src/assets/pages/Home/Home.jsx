@@ -33,12 +33,12 @@ const Home = () => {
             src="https://cdn-icons-png.flaticon.com/128/61/61313.png"
           />
         </div>
-        <Link to='/indicacoes'><Promo
+        <Link className={S.linkPromo} to='/indicacoes'><Promo
           text="Conheça o nordeste"
           src="https://cdn2.civitatis.com/brasil/natal/galeria/parrachos-maracajau.jpg"
         />
         </Link>
-        <Link to='/indicacoes'><Promo
+        <Link className={S.linkPromo} to='/indicacoes'><Promo
           text="Visite Natal"
           src="https://a.cdn-hotels.com/gdcs/production82/d1932/a34e8140-971f-4e1c-93fa-38335cd551de.jpg?impolicy=fcrop&w=800&h=533&q=medium"
         /></Link>
