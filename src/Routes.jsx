@@ -13,6 +13,7 @@ import SearchBar from "./assets/components/SearchBar/SearchBar";
 import Guarantees from "./assets/components/Guarantees/Guarantees";
 import Promo from "./assets/components/Promo/Promo";
 import Room from "./assets/pages/Room/Room";
+import Login from "./assets/pages/Login/Login";
 
 /*
 PROPS
@@ -31,6 +32,7 @@ const Routes = () => {
         <Route path="/" element={<Home />} />
         <Route path="/indicacoes" element={<Indications />} />
         <Route path='/quarto/:ID_QUARTO' element={<Room />} />
+        <Route path='/login' element={<Login/>}/>
       </Switch>
     </BrowserRouter>
   );
