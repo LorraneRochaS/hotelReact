@@ -23,6 +23,7 @@ const Routes = () => {
       <Switch>
         <Route path="/" element={<Home />} />
         <Route path="/quartos" element={<Indications />} />
+        {/* Rota para levar em quartos por quantidade de hóspedes */}
         <Route path="/quartos/:tipo" element={<Room />} />
         <Route path='/quarto/:ID_QUARTO' element={<Room />} />
         <Route path='/login' element={<Login/>}/>
