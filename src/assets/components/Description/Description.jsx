@@ -3,7 +3,7 @@ import Paragraph from '../Paragraph/Paragraph'
 import Title from '../Title/Title'
 import S from './Description.module.css'
 
-//ess componetne é utilizado preferencialmente para uso com um texto longo, foi criado para a pagina que apresenta um unico produto.
+//ess componente é utilizado preferencialmente para uso com um texto longo, foi criado para a pagina que apresenta um unico produto.
 
 const Description = (props) => {
   return (
