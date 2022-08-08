@@ -23,6 +23,21 @@ export const getRoomsByCapacity = async (capacity) => {
     return json;
 }
 
+//funções para pegar dados do usuário e adicionar novo usário na API
+
+export const getUserById = async () => {
+    const response = await instancia.get('/hospedes/:id');
+      const json = await response.data;
+      console.log(json);
+      return json;
+}
+
+export const postUser = async (guest) => {
+    const response = await instancia.post('/hospedes', guest)
+    const json = await response.data.hospedes;
+    return json
+};
+
 //funções para adicionar reservas, editar e deletar na API
 
 export const postBooking = async (booking) => {
