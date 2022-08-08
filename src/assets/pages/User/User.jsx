@@ -9,7 +9,10 @@ import { getBookingsById } from '../../../service/api'
 
 const User = () => {
 
-    const params = useParams()
+    //erro ao buscar API. Método p/ buscar por id de usuário?
+
+    const params = useParams();
+    const { ID_USUARIO } = params;
   const [bookings, setBookings] = useState();
 
   async function request() {
@@ -28,7 +31,7 @@ const User = () => {
       <h3>Nova Reserva</h3>
       <SearchBar />
       <h3>Últimas Reservas:</h3>
-      <div>{!!bookings &&
+      {/* <div>{!!bookings &&
         bookings.reserva.map((booking, key) => {
           return (
 
@@ -37,14 +40,14 @@ const User = () => {
               src="https://cf.bstatic.com/images/hotel/840x460/631/63184497.jpg"
               descr="img quarto"
               key={key}
-              title={booking.NUMERO_DO_QUARTO}
-              class={booking.CLASSE}
-              price={booking.DIARIA}
+              idRoom={booking.ID_QUARTO}
+              checkOut={booking.CHECK_OUT}
+              checkIn={booking.CHECK_IN}
               id={booking.ID_RESERVA}
             />
           );
         })}
-    </div>
+    </div> */}
 
     </div>
   )

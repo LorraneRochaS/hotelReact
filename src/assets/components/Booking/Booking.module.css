@@ -1,4 +1,4 @@
-.roomCard {
+.bookingCard {
     display: flex;
     justify-content: center;
     width: calc(100% - 1rem);
@@ -61,7 +61,7 @@
     color: #736d6d;
   }
   
-  .descr {
+  .checkDate {
     width: fit-content;
     height: 58px;
   
@@ -74,7 +74,7 @@
     color: #736d6d;
   }
   
-  .priceContainer {
+  .btnContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
