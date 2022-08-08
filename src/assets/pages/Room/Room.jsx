@@ -6,11 +6,15 @@ import Button from '../../components/Button/Button'
 import S from './Room.module.css'
 import Convenience from '../../components/Convenience/Convenience'
 import Paragraph from '../../components/Paragraph/Paragraph'
+import { useParams } from 'react-router-dom'
 
 const Room = () => {
+    const params = useParams()
+    const { ID_QUARTO } = params
+    console.log(params);
   return (
     <div>
-        <Title title='123123' />
+        <Title title={ID_QUARTO}/>
         <RoomImg />
         <div className={S.flexCtn1}>
             <Price text='12313' />

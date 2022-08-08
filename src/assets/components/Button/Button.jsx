@@ -5,7 +5,7 @@ import S from './Button.module.css'
 
 const Button = (props) => {
   return (
-    <button className={S.button}>
+    <button className={S.button} onClick= {props.onClick}>
         <p className={S.text} >{props.text}</p>
     </button>
   )

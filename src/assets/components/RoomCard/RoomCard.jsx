@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from '../Button/Button'
 import S from './RoomCard.module.css'
+import { useNavigate } from 'react-router-dom'
 
 /*
 PROPS
@@ -11,6 +12,12 @@ descr = descriçao
 price = preço */
 
 const RoomCard = (props) => {
+
+const navigate = useNavigate( )
+
+function handleRoom() {
+  navigate(`/quarto/${props.ID_QUARTO}`)
+}
   
   return (
     <div className={S.roomCard}>
@@ -21,7 +28,7 @@ const RoomCard = (props) => {
             <p className={S.descr}>{props.descr}</p>
             <div className={S.priceContainer}>
                 <p className={S.price}>R${props.price} / noite</p>
-                <Button text='ver'/>
+                <Button text='ver' onClick= {handleRoom} />
             </div>
         </div>
     </div>
