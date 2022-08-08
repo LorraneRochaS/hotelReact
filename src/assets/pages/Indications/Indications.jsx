@@ -31,9 +31,6 @@ const Indications = () => {
 
   },[] )
 
-  console.log(quartos.quarto);
-  
-
 
   return (
     <div>
