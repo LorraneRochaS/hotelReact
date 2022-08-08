@@ -40,7 +40,7 @@ const Home = () => {
         />
         </Link>
         <Link to='/indicacoes'><Promo
-          text="Visite Natal"
+          text="Visite Natall"
           src="https://a.cdn-hotels.com/gdcs/production82/d1932/a34e8140-971f-4e1c-93fa-38335cd551de.jpg?impolicy=fcrop&w=800&h=533&q=medium"
         /></Link>
       </div>
