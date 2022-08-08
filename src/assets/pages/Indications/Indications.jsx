@@ -14,30 +14,37 @@ descr = descriçao
 price = preço */
 
 const Indications = () => {
-  const [ quartos, setQuartos] = useState()
+  const [quartos, setQuartos] = useState();
 
   async function request() {
-    const response = await axios.get('https://api-site-hotel.herokuapp.com/quarto')
-    const json = await response.data
+    const response = await axios.get(
+      "https://api-site-hotel.herokuapp.com/quarto"
+    );
+    const json = await response.data;
     console.log(json);
-    setQuartos(json)
+    setQuartos(json);
   }
 
   useEffect(() => {
     request();
   }, []);
 
-
   return (
     <div>
-      
-      
-      {!!quartos && quartos.quarto.map((quarto, key) => {
-        return (
-          <RoomCard src='https://cf.bstatic.com/images/hotel/840x460/631/63184497.jpg' descr='lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utilizado' key={key} title={quarto.NUMERO_DO_QUARTO} class={quarto.CLASSE} price={quarto.DIARIA} id={quarto.ID_QUARTO} />
-        )
-      })}
-      
+      {!!quartos &&
+        quartos.quarto.map((quarto, key) => {
+          return (
+            <RoomCard
+              src="https://cf.bstatic.com/images/hotel/840x460/631/63184497.jpg"
+              descr="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utilizado"
+              key={key}
+              title={quarto.NUMERO_DO_QUARTO}
+              class={quarto.CLASSE}
+              price={quarto.DIARIA}
+              id={quarto.ID_QUARTO}
+            />
+          );
+        })}
     </div>
   );
 };

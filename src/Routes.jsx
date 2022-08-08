@@ -30,7 +30,7 @@ const Routes = () => {
 
       <Switch>
         <Route path="/" element={<Home />} />
-        <Route path="/indicacoes" element={<Indications />} />
+        <Route path="/quartos" element={<Indications />} />
         <Route path='/quarto/:ID_QUARTO' element={<Room />} />
         <Route path='/login' element={<Login/>}/>
       </Switch>
