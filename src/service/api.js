@@ -6,7 +6,7 @@ const instancia = axios.create({
 })
 
 
-// função asíncrona para receber todos os quartos
+// função assíncrona para receber todos os quartos
 
 export const getRooms = async () => {
     const response = await instancia.get('/quarto');
