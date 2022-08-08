@@ -1,9 +1,11 @@
 import React from 'react'
 import S from './Price.module.css'
 
-const Price = () => {
+// esse modulo foi criado para exibir um preço em tamanho grande
+
+const Price = (props) => {
   return (
-    <h3 className={S.price}></h3>
+    <h3 className={S.price}>{props.text}</h3>
   )
 }
 

@@ -12,6 +12,7 @@ import Indications from "./assets/pages/Indications/Indications";
 import SearchBar from "./assets/components/SearchBar/SearchBar";
 import Guarantees from "./assets/components/Guarantees/Guarantees";
 import Promo from "./assets/components/Promo/Promo";
+import Room from "./assets/pages/Room/Room";
 
 /*
 PROPS
@@ -40,6 +41,7 @@ const Routes = () => {
         />
         <Route path="/home" element={<Home />} />
         <Route path="/indicacoes" element={<Indications />} />
+        <Route path='/quarto' element={<Room />} />
       </Switch>
     </BrowserRouter>
   );
