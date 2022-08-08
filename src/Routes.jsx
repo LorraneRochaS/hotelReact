@@ -31,6 +31,7 @@ const Routes = () => {
       <Switch>
         <Route path="/" element={<Home />} />
         <Route path="/quartos" element={<Indications />} />
+        <Route path="/quartos/:tipo" element={<Room />} />
         <Route path='/quarto/:ID_QUARTO' element={<Room />} />
         <Route path='/login' element={<Login/>}/>
       </Switch>

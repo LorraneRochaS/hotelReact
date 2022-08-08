@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import RoomCard from "../../components/RoomCard/RoomCard";
+import { getRooms } from "../../../service/api";
 import Title from "../../components/Title/Title";
 import axios from "axios";
 
@@ -14,15 +16,12 @@ descr = descriçao
 price = preço */
 
 const Indications = () => {
+  const params = useParams()
   const [quartos, setQuartos] = useState();
 
   async function request() {
-    const response = await axios.get(
-      "https://api-site-hotel.herokuapp.com/quarto"
-    );
-    const json = await response.data;
-    console.log(json);
-    setQuartos(json);
+    const response = await getRooms()
+    setQuartos(response);
   }
 
   useEffect(() => {
