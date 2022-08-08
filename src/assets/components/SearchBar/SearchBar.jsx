@@ -2,6 +2,8 @@ import React from "react";
 import Button from "../Button/Button";
 import S from "./SearchBar.module.css";
 
+//barra de busca , feita para uso na home.
+
 const SearchBar = () => {
   return (
     <div className={S.searchBar}>
