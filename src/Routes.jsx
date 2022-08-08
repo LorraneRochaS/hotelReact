@@ -5,6 +5,7 @@ import Home from "./assets/pages/Home/Home";
 import Indications from "./assets/pages/Indications/Indications";
 import Room from "./assets/pages/Room/Room";
 import Login from "./assets/pages/Login/Login";
+import User from "./assets/pages/User/User";
 
 /*
 PROPS
@@ -25,6 +26,7 @@ const Routes = () => {
         <Route path="/quartos/:tipo" element={<Room />} />
         <Route path='/quarto/:ID_QUARTO' element={<Room />} />
         <Route path='/login' element={<Login/>}/>
+        <Route path='/perfil/:nome' element={<User/>}/>
       </Switch>
     </BrowserRouter>
   );
