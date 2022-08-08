@@ -28,18 +28,7 @@ const Routes = () => {
       <Header />
 
       <Switch>
-        <Route
-          path="/"
-          element={
-            <RoomCard
-              title="Quarto Standart"
-              date="3 - 8 agosto"
-              descr="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
-              price="R$679 / noite"
-            />
-          }
-        />
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/indicacoes" element={<Indications />} />
         <Route path='/quarto/:ID_QUARTO' element={<Room />} />
       </Switch>
