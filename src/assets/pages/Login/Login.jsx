@@ -1,11 +1,17 @@
 import React, { useState } from "react";
+import { postUser } from "../../../service/api";
+import Button from "../../components/Button/Button";
 
 function Login() {
   // Estado inicial dos inputs
   const [user, setUser] = useState({
-    name: "",
-    email: "",
-    password: "",
+    NOME: "",
+    SOBRENOME: "",
+    CPF: "",
+    DATA_DE_NASCIMENTO: "",
+    TELEFONE: "",
+    EMAIL: "",
+    ENDEREÇO: ""
   });
 
   // Estado inicial das Msg de Alerta
@@ -18,9 +24,16 @@ function Login() {
   const valueInput = (e) =>
     setUser({ ...user, [e.target.name]: e.target.value });
 
+    // function handleChange (target, key) {
+    //   const value = target.value;
+    //   setUser({ ...user, [key]: value });
+    // }
+
   //Enviar os dados para o back-end
   const addUser = async (e) => {
     e.preventDefault();
+    //para enviar para API
+    postUser();
 
     if (!validate()) return;
 
@@ -116,10 +129,10 @@ function Login() {
         />
         <br />
         <br />
-        * Campos obrigatórios
+        <h6>* Campos obrigatórios</h6>
         <br />
         <br />
-        <button type="submit">Cadastrar</button>
+        <Button text="Cadastrar" onCLick={addUser}/>
       </form>
     </div>
   );
