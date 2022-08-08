@@ -22,3 +22,19 @@ export const getRoomsByCapacity = async (capacity) => {
     const json = await response.data;
     return json;
 }
+
+//funções para adicionar reservas, editar e deletar na API
+
+export const postBooking = async (booking) => {
+    const response = await instancia.post('/reserva', booking)
+    const json = await response.data.reserva;
+    return json
+};
+
+export const deleteBooking = async (id) => {
+    const response = await instancia.delete(`/reserva/${id}`)
+};
+
+export const editBooking = async (id, body) => {
+    const response = await instancia.patch(`/reserva/${id}`, body)
+};
