@@ -16,7 +16,7 @@ const RoomCard = (props) => {
 const navigate = useNavigate( )
 
 function handleRoom() {
-  navigate(`/quarto/${props.ID_QUARTO}`)
+  navigate(`/quarto/${props.id}`)
 }
   
   return (

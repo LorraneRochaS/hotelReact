@@ -24,7 +24,8 @@ const Home = () => {
           />
           <Convenience
             text="Café da Manhã"
-            src="https://cdn-icons.flaticon.com/png/128/1811/premium/1811245.png?token=exp=1659809215~hmac=3a96af15cb9595f5bb86c6f0e0786f53"
+            //src="https://cdn-icons.flaticon.com/png/128/1811/premium/1811245.png?token=exp=1659809215~hmac=3a96af15cb9595f5bb86c6f0e0786f53"
+            src='https://cdn-icons-png.flaticon.com/128/8138/8138610.png'
           />
 
           <Convenience
