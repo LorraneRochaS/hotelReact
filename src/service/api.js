@@ -41,7 +41,7 @@ export const postUser = async (guest) => {
 //funções para adicionar reservas, editar e deletar na API
 export const getBookings = async () => {
     const response = await instancia.get('/reserva')
-    const json = await response.data['Reservas selecionadas'];
+    const json = await response.data.reserva;
     console.log(json)
     return json
 
