@@ -79,12 +79,13 @@ img {
 
 .Link {
     position: relative;
+    
 }
 
 .links li {
-    list-style: none;
+    list-style:none ;
     margin-bottom: 10px;
-    display: inline-block;
+    
 }
 
 .links a {
@@ -94,9 +95,10 @@ img {
 }
 
 .links2 li {
+    position: relative;
     list-style: none;
     margin-bottom: 10px;
-    display: inline-block;
+   
 
 }
 
@@ -120,6 +122,17 @@ img {
 
 .Article{
     padding: 8px 40px;
+}
+
+@media (max-width: 991px){
+    footer {
+        padding: 40px;
+    }
+    .Container{
+        
+        grid-template-columns: repeat(2,1fr);
+        
+    }
 }
 
 
