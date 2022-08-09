@@ -19,7 +19,7 @@ const User = () => {
   async function request() {
     const response = await getBookings()
     //Array vindo vazio com busca por ID
-    // const response = await getBookingsById(params.reserva)
+    //const response = await getBookingsById(params.reserva)
     setReservas(response);
   }
 
