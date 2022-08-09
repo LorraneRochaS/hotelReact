@@ -5,7 +5,9 @@ import S from './Banner.module.css'
 
 const Banner = (props) => {
   return (
+    <div className={S.bannerCtn}>
     <img  className={S.img} src={props.src} alt="banner-promo-img" />
+    </div>
   )
 }
 
