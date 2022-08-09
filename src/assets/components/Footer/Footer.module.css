@@ -1,0 +1,163 @@
+body{
+    display: grid;
+    justify-content: end;
+    align-content: end;
+    min-height: 100vh;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100x;
+}
+
+.Container {
+    background-color: #EFF1F7;
+    ;
+    justify-content: end;
+    align-content: end;
+    min-height: 100vh;
+
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+
+
+.Container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.Container h2 {
+    position: relative;
+    color: #29292E;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.Container h2::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #FF7B07;
+}
+
+.Container p {
+    color: #29292E;
+}
+
+
+.Sci {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-gap: 10px;
+}
+
+.Sci li {
+    list-style: none;
+}
+
+.Sci li img {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.Link {
+    position: relative;
+}
+
+.links li {
+    list-style: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.links a {
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.links2 li {
+    list-style: none;
+    margin-bottom: 10px;
+    display: inline-block;
+
+}
+
+.Contato {
+    position: relative;
+}
+
+.Contato li {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    margin-bottom: 16px;
+}
+
+.Article {
+    width: 100%;
+    padding: 8px 100px;
+    text-align: center;
+
+}
+
+
+.Article{
+    padding: 8px 40px;
+}
+
+
+
+
+
+
+
+
+/* margin-top: 50px;
+    padding-left: 350px;
+    display: grid;
+    grid: auto-flow / 1fr 1fr 1fr;
+    align-self: center;
+    
+}
+
+
+.Div{
+    
+    width: 300px;
+    height: 150px;
+}
+
+.Hotel{
+    width: 300px;
+    height: 50px;
+}
+
+.Servicos{
+    width: 300px;
+    height: 50px;
+}
+
+.Article{
+    display: grid;
+    align-self: end;
+    grid-area: footer;
+    
+}
+ */
