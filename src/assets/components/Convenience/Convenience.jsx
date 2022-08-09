@@ -6,7 +6,7 @@ import S from './Convenience.module.css'
 const Convenience = (props) => {
   return (
     <div className={S.convenienceCtn}>
-    <img className={S.convenience} src={props.src} alt="conveniencia-acessibilidade-icone" />
+    <img className={S.convenience} src={props.src} alt={props.alt} />
     <p className={S.description}>{props.text}</p>
     </div>
 
