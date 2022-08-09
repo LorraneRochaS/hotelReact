@@ -58,32 +58,7 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-
-
-
-
-                    {/* <div className={S.Div}>
-            <h2>Nos acompanhe nas redes</h2>
-        </div>
-
-        <ul className={S.Hotel}>
-            <h2>Hotel</h2>
-            <p>Ajuda</p>
-            <p>Informações Legais</p>
-            <p>Dados Pessoais</p>
-            <p>Reservas</p>
-        </ul>
-
-        <ul className={S.Servicos}>
-            <h2> Serviços</h2>
-            <p>Localidades</p>
-            <p>Transfer</p>
-        </ul>
-
-        <article className={S.Article}>
-         © Material criado para fins didáticos™.
- 
-        </article> */}
+         
                 </div>
 
             </footer>
