@@ -4,6 +4,7 @@ import Button from "../Button/Button";
 import UserPicture from "../UserPicture/UserPicture";
 import { Link } from "react-router-dom";
 
+//logo
 
 const Header = () => {
   return (

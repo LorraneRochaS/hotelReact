@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Button from "../Button/Button";
 import S from "./SearchBar.module.css";
 
+
 //funções para receber dados de busca por disponibilidade e direcionar para pag com resultado
 
 const SearchBar = () => {

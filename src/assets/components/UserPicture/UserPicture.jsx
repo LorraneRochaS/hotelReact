@@ -1,6 +1,8 @@
 import React from 'react'
 import S from './UserPicture.module.css'
 
+//foto do usuario no canto da navbar
+
 const UserPicture = (props) => {
   return (
     <>
