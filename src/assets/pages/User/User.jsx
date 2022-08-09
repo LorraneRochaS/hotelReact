@@ -17,9 +17,9 @@ const User = () => {
   const [reservas, setReservas] = useState();
 
   async function request() {
-    const response = await getBookings()
+    // const response = await getBookings()
     //Array vindo vazio com busca por ID
-    //const response = await getBookingsById(params.reserva)
+    const response = await getBookingsById(params.reserva)
     setReservas(response);
   }
 
@@ -42,7 +42,7 @@ const User = () => {
             <Booking
               src="https://cf.bstatic.com/images/hotel/840x460/631/63184497.jpg"
               descr="img quarto"
-              key={reserva.ID_RESERVA}
+              key={key}
               idRoom={reserva.ID_QUARTO}
               checkOut={reserva.CHECKOUT}
               checkIn={reserva.CHECKIN}
