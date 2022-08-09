@@ -50,7 +50,7 @@ export const getBookings = async () => {
 //Problemas para pegar reserva por id
 export const getBookingsById = async (id) => {
     const response = await instancia.get(`/reserva/${id}`)
-    const json = await response.data;
+    const json = await response.data['Reserva selecionada'];
     console.log(json)
     return [json]
 }
