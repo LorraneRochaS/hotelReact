@@ -1,10 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "../Button/Button";
 import S from "./SearchBar.module.css";
 
-//barra de busca , feita para uso na home.
+
+//funções para receber dados de busca por disponibilidade e direcionar para pag com resultado
 
 const SearchBar = () => {
+  const [search, setSearch] = useState({
+    CHECKIN: "",
+    CHECKOUT: "",
+    QTD_HOSPEDES: ""
+  })
+
+function handleChange(target, key) {
+  const value = target.value;
+  setSearch({ ...search, [key]: value })
+}
+
+function handleSearch(e) {
+e.preventDefault()
+}
+
   return (
     <div className={S.searchBar}>
       <div className={S.inputCtn}>

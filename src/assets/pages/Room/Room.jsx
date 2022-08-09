@@ -7,6 +7,7 @@ import S from './Room.module.css'
 import Convenience from '../../components/Convenience/Convenience'
 import Paragraph from '../../components/Paragraph/Paragraph'
 import { useParams } from 'react-router-dom'
+import { getBookings } from '../../../service/api'
 
 const Room = () => { 
 

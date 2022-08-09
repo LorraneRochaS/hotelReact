@@ -23,3 +23,13 @@
     display: flex;
     gap: 20px;
 }
+
+.title {
+    color: var(--color-light);
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.link {
+    text-decoration: none;
+}
