@@ -1,6 +1,7 @@
 .title {
   display: flex;
   align-self: center;
+  margin: 0 auto;
   width: fit-content;
   height: 30px;  
   font-family: "Montserrat";

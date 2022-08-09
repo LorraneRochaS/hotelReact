@@ -1,49 +1,49 @@
+.root {
+    background-color: var(--color-three);
+}
 
+.home {
+  display: grid;
+  margin: 0 auto;
+  max-width: 1000px;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content min-content min-content;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  box-shadow: 3px 3px 10px rgb(172, 172, 172), -3px -3px 10px rgb(172, 172, 172);
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+.banner {
+  grid-area: 1 / 1 / 2 / 2;
+  grid-template-rows: min-content;
+}
 .searchBarCtn {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    position: relative;
+  grid-area: 2 / 1 / 3 / 2;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background-color: var(--color-light);
 }
-
 .convenienceCtn {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 100%;    
+  grid-area: 3 / 1 / 4 / 2;
+  display: flex;
 }
 
-.conveniences {
-    display: flex;
-    align-self: center;
-    justify-content: space-around;
-    width: 700px;
-    
+.convTitle {
+    width: 500px;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: var(--color-light);
 }
 
 .promoCtn {
     display: flex;
-    width: 900px;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
     margin: 0 auto;
-    justify-content: space-around;
-    align-self: center;
+    background-color: var(--color-light);
 }
 
-.linkPromo {
-    text-decoration: none;
-}
 
-@media (max-width: 1024px) {
-    .home {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-        }
-        
-        .banner { grid-area: 1 / 1 / 2 / 3; }
-        .searchBarCtn { grid-area: 2 / 1 / 3 / 3; }
-        .convenienceCtn { grid-area: 3 / 1 / 5 / 2; }
-        .promoCtn { grid-area: 3 / 2 / 5 / 3; }
-}

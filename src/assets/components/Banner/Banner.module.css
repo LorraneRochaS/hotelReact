@@ -9,4 +9,5 @@
   width: 1000px;
   min-height: 195px;
   object-fit: cover;
+  border-radius: 4px;
 }
