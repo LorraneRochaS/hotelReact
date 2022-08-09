@@ -106,11 +106,26 @@ img {
     position: relative;
 }
 
-.Contato li {
+.Info li {
     display: grid;
     grid-template-columns: 30px 1fr;
     margin-bottom: 16px;
+    
 }
+.Info img{
+    width: 20px;
+    height: 20px;
+}
+
+.Info{
+    position: relative;
+}
+.Info a {
+    text-decoration: none;
+    color: #29292E;
+}
+
+
 
 .Article {
     width: 100%;
