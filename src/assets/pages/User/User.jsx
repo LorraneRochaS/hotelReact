@@ -19,11 +19,13 @@ const User = () => {
     //Array vindo vazio com busca por ID (resolvido)
     const response = await getBookingsById(ID_RESERVA)
     setReservas(response);
+    
   }
 
   useEffect(() => {
     request();
   }, []);
+  console.log(reservas);
 
   return (
     <div>
@@ -33,7 +35,7 @@ const User = () => {
       <SearchBar />
       <h3>Últimas Reservas:</h3>
       <div>{!!reservas &&
-        reservas.map((reserva, key) => {
+        reservas[0].map((reserva, key) => {
           return (
 
             //Mudar nome dos atributos no cdg para fazer funcionar?
