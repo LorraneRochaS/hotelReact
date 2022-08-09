@@ -35,7 +35,7 @@ const User = () => {
       <SearchBar />
       <h3>Últimas Reservas:</h3>
       <div>{!!reservas &&
-        reservas.reserva.map((reserva, key) => {
+        reservas.map((reserva, key) => {
           return (
 
             //Mudar nome dos atributos no cdg para fazer funcionar?
