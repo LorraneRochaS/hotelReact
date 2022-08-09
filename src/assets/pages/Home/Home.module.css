@@ -10,6 +10,9 @@
   grid-template-rows: min-content min-content min-content;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  box-shadow: 3px 3px 10px rgb(172, 172, 172), -3px -3px 10px rgb(172, 172, 172);
+  margin-top: 10px;
+  border-radius: 4px;
 }
 
 .banner {
