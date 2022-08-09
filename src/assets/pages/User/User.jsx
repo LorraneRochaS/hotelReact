@@ -6,7 +6,6 @@ import Booking from '../../components/Booking/Booking'
 import SearchBar from '../../components/SearchBar/SearchBar'
 import Title from '../../components/Title/Title'
 import { getBookingsById } from '../../../service/api'
-import { getBookings } from '../../../service/api'
 
 const User = () => {
 
@@ -17,7 +16,6 @@ const User = () => {
   const [reservas, setReservas] = useState();
 
   async function request() {
-    // const response = await getBookings()
     //Array vindo vazio com busca por ID (resolvido)
     const response = await getBookingsById(ID_RESERVA)
     setReservas(response);
