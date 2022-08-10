@@ -13,7 +13,7 @@ const Home = () => {
       <div className={S.home}>
         <Banner
           className={S.banner}
-          src="https://images.ecycle.com.br/wp-content/uploads/2021/05/20195924/o-que-e-paisagem.jpg"
+          src="https://www.stoodi.com.br/wp-content/uploads/2020/06/regi%C3%A3o-nordeste-1-1920x1024.jpeg"
         />
         <div className={S.searchBarCtn}>
           <SearchBar />

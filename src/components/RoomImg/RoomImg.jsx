@@ -5,7 +5,7 @@ import S from './RoomImg.module.css'
 
 const RoomImg = (props) => {
   return (
-    <img className={S.img} src={props.img} alt="img-de-exemplo-do-quarto" />
+    <img className={S.img} src={props.src} alt="img-de-exemplo-do-quarto" />
   )
 }
 
