@@ -74,5 +74,9 @@ export const deleteBooking = async (id) => {
 };
 
 export const editBooking = async (id, body) => {
-    const response = await instancia.patch(`/reserva/${id}`, body)
+    try {
+        return await instancia.put(`/reserva/${id}`, body)
+    } catch (error){
+        console.log(error);
+    }
 };

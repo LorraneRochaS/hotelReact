@@ -19,10 +19,10 @@ const Reserva = () => {
     CHECKOUT: "",
   });
 
-  const [status, setStatus] = useState({
-    type: "",
-    message: "",
-  });
+  // const [status, setStatus] = useState({
+  //   type: "",
+  //   message: "",
+  // });
 
   async function getReservas() {
     const response = await getBookingByBookingId(ID_RESERVA);
@@ -45,13 +45,14 @@ const Reserva = () => {
   const request = async (e) => {
     e.preventDefault();
     const response = await editBooking(ID_RESERVA, oldData);
-
-    if (response) {
-      setStatus({
-        type: "sucess",
-        mensagem: "Dados alterados com sucesso!",
-      });
-    }
+  setOldData(response)
+  console.log(response);
+    // if (response) {
+    //   setStatus({
+    //     type: "sucess",
+    //     mensagem: "Dados alterados com sucesso!",
+    //   });
+    // }
   };
 
   return (
@@ -63,7 +64,7 @@ const Reserva = () => {
         <div>
           <form action="">
             <input
-              type="text"
+              type="number"
               name="reserva"
               id="reserva"
               placeholder={oldData.ID_RESERVA}
@@ -72,7 +73,7 @@ const Reserva = () => {
             />
 
             <input
-              type="text"
+              type="number"
               name="quarto"
               id="quarto"
               placeholder={oldData.ID_QUARTO}
@@ -81,7 +82,7 @@ const Reserva = () => {
             />
 
             <input
-              type="text"
+              type="nuumber"
               name="hospede"
               id="hospede"
               placeholder={oldData.ID_HOSPEDE}
@@ -108,7 +109,7 @@ const Reserva = () => {
             <button onClick={request}>atualizar</button>
           </form>
           <Button text="deletar" onClick={handleDelete} />
-          {status.type === "sucess" ? <p>{status.mensagem}</p> : ""}
+          {/* {status.type === "sucess" ? <p>{status.mensagem}</p> : ""} */}
         </div>
       </div>
     </div>
