@@ -35,7 +35,17 @@
     display: grid;
     max-width: 300px;
     justify-content: center;
-    place-self: center;
+    place-self: center;   
+}
 
-   
+.form {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #9c7a7a86;
+    color: aliceblue;
+    font-size: 12pt;
+    box-sizing: 0px 10px 40px;
+    
 }
