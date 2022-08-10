@@ -6,6 +6,7 @@ import Indications from "./pages/Indications/Indications";
 import Room from "./pages/Room/Room";
 import Login from "./pages/Login/Login";
 import User from "./pages/User/User";
+import Reserva from './pages/Reserva/Reserva'
 
 /*
 PROPS
@@ -28,6 +29,7 @@ const Routes = () => {
         <Route path='/quarto/:ID_QUARTO' element={<Room />} />
         <Route path='/login' element={<Login/>}/>
         <Route path='/perfil/:ID_HOSPEDE' element={<User/>}/>
+        <Route path='/reserva/reserva/:ID_RESERVA' element={<Reserva/>}/>
       </Switch>
     </BrowserRouter>
   );

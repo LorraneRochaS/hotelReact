@@ -11,7 +11,7 @@ const Booking = (props) => {
 const navigate = useNavigate()
 
 function handleEdit() {
-  navigate(`/reserva/${props.id}`)
+  navigate(`/reserva/reserva/${props.id}`)
 }
 
 function handleDelete() {

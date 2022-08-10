@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import SearchBar from '../../components/SearchBar/SearchBar'
 import Title from '../../components/Title/Title'
-import { getBookingsById } from '../../../service/api'
+import { getBookingByBookingId } from "../../service/api";
 
 const Reserva = () => {
   const params = useParams();
@@ -14,7 +14,7 @@ const Reserva = () => {
 
   async function request() {
     //Array vindo vazio com busca por ID (resolvido)
-    const response = await getBookingsById(ID_RESERVA);
+    const response = await getBookingByBookingId(ID_RESERVA);
     setReservas(response);
   }
 
