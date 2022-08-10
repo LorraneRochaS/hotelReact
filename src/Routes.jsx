@@ -8,6 +8,7 @@ import Login from "./pages/Login/Login";
 import User from "./pages/User/User";
 import Reserva from './pages/Reserva/Reserva'
 import NovaReserva from "./pages/NovaReserva/NovaReserva";
+import Animacao from "./components/Animacao/Animacao";
 
 /*
 PROPS
@@ -20,7 +21,7 @@ price = preço */
 const Routes = () => {
   return (
     <BrowserRouter>
-      <Header />
+     <Header />
 
       <Switch>
         <Route path="/" element={<Home />} />

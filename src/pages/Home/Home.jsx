@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import S from "./Home.module.css";
 import Banner from "../../components/Banner/Banner";
 import SearchBar from "../../components/SearchBar/SearchBar";
@@ -6,10 +6,22 @@ import Convenience from "../../components/Convenience/Convenience";
 import Title from "../../components/Title/Title";
 import Promo from "../../components/Promo/Promo";
 import { Link } from "react-router-dom";
+import Animacao from '../../components/Animacao/Animacao'
 
 const Home = () => {
+  const [removeCarregando, setRemoveCarregando] = useState(false)
+//config animação
+useEffect(()=>{
+  setTimeout(()=>{
+    setRemoveCarregando(true)
+  }, 3500)
+})
+
   return (
+    
     <div className={S.root}>
+      {!removeCarregando&& <Animacao />}
+      <div className={S.root}></div>
       <div className={S.home}>
         <Banner
           className={S.banner}
