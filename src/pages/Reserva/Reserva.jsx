@@ -7,6 +7,7 @@ import Title from '../../components/Title/Title'
 import { getBookingByBookingId } from "../../service/api";
 import { deleteBooking } from "../../service/api";
 import Form from "../../components/Form/Form";
+import Button from "../../components/Button/Button";
 
 const Reserva = () => {
   const params = useParams();
@@ -40,7 +41,8 @@ const Reserva = () => {
           reservas[0].map((reserva, key) => {
             return (
               //Mudar nome dos atributos no cdg para fazer funcionar?
-              <Form
+              <div>
+                <Form
                 key={key}
                 quarto={reserva.ID_QUARTO}
                 hospede={reserva.ID_HOSPEDE}
@@ -48,6 +50,11 @@ const Reserva = () => {
                 checkin={reserva.CHECKIN}
                 reserva={reserva.ID_RESERVA}
               />
+              <Button text="atualizar"/>
+              <Button text="deletar" onClick={handleDelete}/>
+              </div>
+              
+
             );
           })}
       </div>
