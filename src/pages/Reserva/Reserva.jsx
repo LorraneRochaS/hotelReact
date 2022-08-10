@@ -1,4 +1,5 @@
 import React from "react";
+import S from "./Reserva.module.css"
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
@@ -107,7 +108,7 @@ const Reserva = () => {
               onChange={(e) => handleChange(e, "CHECKOUT")}
             />
 
-            <button onClick={request}>atualizar</button>
+            <button className={S.button} onClick={request}><p className={S.text}>atualizar</p></button>
           </form>
           <Button text="deletar" onClick={handleDelete} />
           {/* {status.type === "sucess" ? <p>{status.mensagem}</p> : ""} */}
