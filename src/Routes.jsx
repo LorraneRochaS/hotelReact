@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter, Routes as Switch, Route } from "react-router-dom";
-import Header from "./assets/components/Header/Header";
-import Home from "./assets/pages/Home/Home";
-import Indications from "./assets/pages/Indications/Indications";
-import Room from "./assets/pages/Room/Room";
-import Login from "./assets/pages/Login/Login";
-import User from "./assets/pages/User/User";
+import Header from "./components/Header/Header";
+import Home from "./pages/Home/Home";
+import Indications from "./pages/Indications/Indications";
+import Room from "./pages/Room/Room";
+import Login from "./pages/Login/Login";
+import User from "./pages/User/User";
 
 /*
 PROPS

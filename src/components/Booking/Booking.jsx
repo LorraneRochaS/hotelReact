@@ -2,7 +2,7 @@ import React from 'react'
 import Button from '../Button/Button'
 import S from './Booking.module.css'
 import { useNavigate } from 'react-router-dom'
-import { deleteBooking } from '../../../service/api'
+import { deleteBooking } from '../../service/api'
 
 //Card para mostrar reservas do feitas pelo hóspede
 

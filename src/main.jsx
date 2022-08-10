@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Footer from './assets/components/Footer/Footer'
+import Footer from './components/Footer/Footer'
 import Routes from './Routes'
 import './styles/reset.css'
 import './styles/style.css'

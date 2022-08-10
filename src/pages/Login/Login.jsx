@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { postUser } from "../../../service/api";
+import { postUser } from "../../service/api";
 import Button from "../../components/Button/Button";
 import S from './Login.module.css'
 

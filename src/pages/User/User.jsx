@@ -5,7 +5,7 @@ import { useEffect } from 'react'
 import Booking from '../../components/Booking/Booking'
 import SearchBar from '../../components/SearchBar/SearchBar'
 import Title from '../../components/Title/Title'
-import { getBookingsById } from '../../../service/api'
+import { getBookingsById } from '../../service/api'
 
 const User = () => {
 

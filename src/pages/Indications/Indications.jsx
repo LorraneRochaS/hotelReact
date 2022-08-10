@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import RoomCard from "../../components/RoomCard/RoomCard";
-import { getRooms } from "../../../service/api";
+import { getRooms } from "../../service/api";
 import Title from "../../components/Title/Title";
 import axios from "axios";
 

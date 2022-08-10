@@ -1,5 +1,5 @@
 import React from "react";
-import CardTitle from "../../CardTitle/CardTitle";
+import CardTitle from "../CardTitle/CardTitle";
 import S from "./Promo.module.css";
 
 // o componente promo tem uma imagem (src) de fundo e um titulo (text), ela tem por objetivo funcionar como um link chamativo.

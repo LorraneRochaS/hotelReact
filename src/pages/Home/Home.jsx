@@ -1,6 +1,5 @@
 import React from "react";
 import S from "./Home.module.css";
-import Button from "../../components/Button/Button";
 import Banner from "../../components/Banner/Banner";
 import SearchBar from "../../components/SearchBar/SearchBar";
 import Convenience from "../../components/Convenience/Convenience";
