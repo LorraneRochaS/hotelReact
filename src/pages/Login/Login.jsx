@@ -135,7 +135,7 @@ function Login() {
         <br />
         <br />
         {/* após validação e inserção de dados na api, trocar 5 por params id */}
-        <Link to="/perfil/5" className={S.link}><Button text="Cadastrar" onCLick={addUser}/></Link>
+        <Link to="/perfil/3" className={S.link}><Button text="Cadastrar" onCLick={addUser}/></Link>
         
       </form>
     </div>
