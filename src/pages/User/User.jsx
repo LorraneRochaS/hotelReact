@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 import Booking from '../../components/Booking/Booking'
 import SearchBar from '../../components/SearchBar/SearchBar'
 import Title from '../../components/Title/Title'
@@ -11,6 +12,12 @@ import Button from '../../components/Button/Button'
 const User = () => {
 
     //erro ao buscar API. Método p/ buscar por id de usuário?
+
+    const navigate = useNavigate()
+
+function handleNavigate() {
+  navigate(`/reserva/`)
+}
 
     const params = useParams();
     const { ID_HOSPEDE } = params;
@@ -31,7 +38,7 @@ const User = () => {
   return (
     <div>
       <Title title="Bem vindo(a), Nahla"/>
-      <Button text="nova reserva"/>
+      <Button text="nova reserva" onClick={handleNavigate}/>
       <h3>Últimas Reservas:</h3>
       <div>{!!reservas &&
         reservas[0].map((reserva, key) => {
