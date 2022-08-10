@@ -10,7 +10,7 @@ import './styles/style.css'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Routes/>
-    <Footer></Footer>
+    <Footer />
     
   </React.StrictMode>
 )

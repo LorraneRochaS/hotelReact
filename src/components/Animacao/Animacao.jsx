@@ -3,9 +3,12 @@ import S from './Animacao.module.css'
 
 
 const Animacao = () => {
+  
   return (
     <div className={S.container}>
-        <div className={S.loader}></div>
+        <div className={S.loader}>
+
+        </div>
     </div>
   )
 }
