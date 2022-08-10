@@ -87,7 +87,7 @@ const Reserva = () => {
               type="nuumber"
               name="hospede"
               id="hospede"
-              placeholder={oldData.ID_HOSPEDE}
+              placeholder="Hóspede"
               value={oldData.ID_HOSPEDE}
               onChange={(e) => handleChange(e, "ID_HOSPEDE")}
             />
