@@ -35,16 +35,16 @@ const NovaReserva = () => {
           type="number"
           name="quarto"
           id="quarto"
-          placeholder={newData.ID_QUARTO}
+          placeholder="Quarto"
           value={newData.ID_QUARTO}
           onChange={(e) => handleChange(e, "ID_QUARTO")}
         />
 
         <input
-          type="nuumber"
+          type="number"
           name="hospede"
           id="hospede"
-          placeholder={newData.ID_HOSPEDE}
+          placeholder="Hóspede"
           value={newData.ID_HOSPEDE}
           onChange={(e) => handleChange(e, "ID_HOSPEDE")}
         />
@@ -52,7 +52,6 @@ const NovaReserva = () => {
         <input
           id="checkin"
           type="date"
-          placeholder={newData.CHECKIN}
           value={newData.CHECKIN}
           onChange={(e) => handleChange(e, "CHECKIN")}
         />
@@ -60,7 +59,6 @@ const NovaReserva = () => {
         <input
           id="checkout"
           type="date"
-          placeholder={newData.CHECKOUT}
           value={newData.CHECKOUT}
           onChange={(e) => handleChange(e, "CHECKOUT")}
         />

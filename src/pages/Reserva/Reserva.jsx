@@ -69,7 +69,7 @@ const Reserva = () => {
               type="number"
               name="reserva"
               id="reserva"
-              placeholder={oldData.ID_RESERVA}
+              placeholder="Reserva"
               value={oldData.ID_RESERVA}
               onChange={(e) => handleChange(e, "ID_RESERVA")}
             />
@@ -78,7 +78,7 @@ const Reserva = () => {
               type="number"
               name="quarto"
               id="quarto"
-              placeholder={oldData.ID_QUARTO}
+              placeholder="Quarto"
               value={oldData.ID_QUARTO}
               onChange={(e) => handleChange(e, "ID_QUARTO")}
             />
@@ -95,7 +95,6 @@ const Reserva = () => {
             <input
               id="checkin"
               type="date"
-              placeholder={oldData.CHECKIN}
               value={oldData.CHECKIN}
               onChange={(e) => handleChange(e, "CHECKIN")}
             />
@@ -103,7 +102,6 @@ const Reserva = () => {
             <input
               id="checkout"
               type="date"
-              placeholder="checkout"
               value={oldData.CHECKOUT}
               onChange={(e) => handleChange(e, "CHECKOUT")}
             />
