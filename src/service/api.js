@@ -58,7 +58,7 @@ export const getBookingsById = async (id) => {
 
 export const getBookingByBookingId = async (id) => {
     const response = await instancia.get(`/reserva/reserva/${id}`)
-    const json = await response.data.reserva;
+    const json = await response.data.reserva[0];
     console.log(json)
     return [json]
 }

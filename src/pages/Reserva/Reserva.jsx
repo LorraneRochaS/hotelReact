@@ -5,17 +5,33 @@ import { useEffect } from "react";
 import Title from "../../components/Title/Title";
 import { getBookingByBookingId } from "../../service/api";
 import { deleteBooking } from "../../service/api";
+import { editBooking } from "../../service/api";
 import Button from "../../components/Button/Button";
 
 const Reserva = () => {
   const params = useParams();
   const { ID_RESERVA } = params;
-  const [reservas, setReservas] = useState();
+  const [oldData, setOldData] = useState({
+    ID_RESERVA: ID_RESERVA,
+    ID_HOSPEDE: "",
+    ID_QUARTO: "",
+    CHECKIN: "",
+    CHECKOUT: "",
+  });
 
-  async function request() {
-    //Array vindo vazio com busca por ID (resolvido)
+  const [status, setStatus] = useState({
+    type: "",
+    message: "",
+  });
+
+  async function getReservas() {
     const response = await getBookingByBookingId(ID_RESERVA);
-    setReservas(response);
+    setOldData(response);
+  }
+
+  function handleChange(e, key) {
+    const value = e.target.value;
+    setOldData({ ...oldData, [key]: value });
   }
 
   function handleDelete() {
@@ -23,9 +39,20 @@ const Reserva = () => {
   }
 
   useEffect(() => {
-    request();
+    getReservas();
   }, []);
-  console.log(reservas);
+
+  const request = async (e) => {
+    e.preventDefault();
+    const response = await editBooking(ID_RESERVA, oldData);
+
+    if (response) {
+      setStatus({
+        type: "sucess",
+        mensagem: "Dados alterados com sucesso!",
+      });
+    }
+  };
 
   return (
     <div>
@@ -33,71 +60,56 @@ const Reserva = () => {
 
       <h3>Editar Reserva:</h3>
       <div>
-        {!!reservas &&
-          reservas[0].map((reserva, key) => {
-            return (
-              //Mudar nome dos atributos no cdg para fazer funcionar?
-              <div>
-                <form action="" key={key}>
-                  <fieldset>
-                    <label htmlFor="">Reserva</label>
-                    <input
-                      type="text"
-                      placeholder="reserva"
-                      value={reserva.ID_RESERVA}
-                      onChange={({ target }) =>
-                        handleChange(target, "ID_RESERVA")
-                      }
-                    />
-                  </fieldset>
-                  <fieldset>
-                    <label htmlFor="">Quarto</label>
-                    <input
-                      type="text"
-                      placeholder="quarto"
-                      value={reserva.ID_QUARTO}
-                      onChange={({ target }) =>
-                        handleChange(target, "ID_QUARTO")
-                      }
-                    />
-                  </fieldset>
-                  <fieldset>
-                    <label htmlFor="">Hóspede</label>
-                    <input
-                      type="text"
-                      placeholder="hospede"
-                      value={reserva.ID_HOSPEDE}
-                      onChange={({ target }) =>
-                        handleChange(target, "ID_HOSPEDE")
-                      }
-                    />
-                  </fieldset>
-                  <fieldset>
-                    <label htmlFor="">Check In:</label>
-                    <input
-                      type="date"
-                      placeholder="checkin"
-                      value={reserva.CHECKIN}
-                      onChange={({ target }) => handleChange(target, "CHECKIN")}
-                    />
-                  </fieldset>
-                  <fieldset>
-                    <label htmlFor="">Checkout:</label>
-                    <input
-                      type="date"
-                      placeholder="checkout"
-                      value={reserva.CHECKOUT}
-                      onChange={({ target }) =>
-                        handleChange(target, "CHECKOUT")
-                      }
-                    />
-                  </fieldset>
-                </form>
-                <Button text="atualizar" />
-                <Button text="deletar" onClick={handleDelete} />
-              </div>
-            );
-          })}
+        <div>
+          <form action="">
+            <input
+              type="text"
+              name="reserva"
+              id="reserva"
+              placeholder={oldData.ID_RESERVA}
+              value={oldData.ID_RESERVA}
+              onChange={(e) => handleChange(e, "ID_RESERVA")}
+            />
+
+            <input
+              type="text"
+              name="quarto"
+              id="quarto"
+              placeholder={oldData.ID_QUARTO}
+              value={oldData.ID_QUARTO}
+              onChange={(e) => handleChange(e, "ID_QUARTO")}
+            />
+
+            <input
+              type="text"
+              name="hospede"
+              id="hospede"
+              placeholder={oldData.ID_HOSPEDE}
+              value={oldData.ID_HOSPEDE}
+              onChange={(e) => handleChange(e, "ID_HOSPEDE")}
+            />
+
+            <input
+              id="checkin"
+              type="date"
+              placeholder={oldData.CHECKIN}
+              value={oldData.CHECKIN}
+              onChange={(e) => handleChange(e, "CHECKIN")}
+            />
+
+            <input
+              id="checkout"
+              type="date"
+              placeholder="checkout"
+              value={oldData.CHECKOUT}
+              onChange={(e) => handleChange(e, "CHECKOUT")}
+            />
+
+            <button onClick={request}>atualizar</button>
+          </form>
+          <Button text="deletar" onClick={handleDelete} />
+          {status.type === "sucess" ? <p>{status.mensagem}</p> : ""}
+        </div>
       </div>
     </div>
   );
