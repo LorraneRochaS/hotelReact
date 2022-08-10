@@ -49,7 +49,7 @@ export const getBookings = async () => {
 
 //Problemas para pegar reserva por id (resolvido)
 //Descobrir como substituir index 0 por parâmetro caso necessário, se vier vários resultados da API ao criar método get por id de hóspede
-export const getBookingsById = async (id, index) => {
+export const getBookingsById = async (id) => {
     const response = await instancia.get(`/reserva/${id}`)
     const json = await response.data.reserva;
     console.log(json)
@@ -69,14 +69,3 @@ export const deleteBooking = async (id) => {
 export const editBooking = async (id, body) => {
     const response = await instancia.patch(`/reserva/${id}`, body)
 };
-
-//funçoa para alterar reserva 
-export const alteraReserva = async (id, body) => {
-    try {
-      return await api.put(`/reserva/${id}`, body)
-  
-    } catch (error) {
-      console.log(error);
-      return error
-    }
-  };
