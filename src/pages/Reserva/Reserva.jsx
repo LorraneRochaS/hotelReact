@@ -2,7 +2,6 @@ import React from "react";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
-import SearchBar from '../../components/SearchBar/SearchBar'
 import Title from '../../components/Title/Title'
 import { getBookingByBookingId } from "../../service/api";
 import { deleteBooking } from "../../service/api";
@@ -33,9 +32,7 @@ const Reserva = () => {
     <div>
       <Title title="Bem vindo(a), Nahla" />
 
-      <h3>Nova Reserva</h3>
-      <SearchBar />
-      <h3>Últimas Reservas:</h3>
+      <h3>Editar Reserva:</h3>
       <div>
         {!!reservas &&
           reservas[0].map((reserva, key) => {
