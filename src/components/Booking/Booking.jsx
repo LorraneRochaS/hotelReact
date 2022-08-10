@@ -2,7 +2,6 @@ import React from 'react'
 import Button from '../Button/Button'
 import S from './Booking.module.css'
 import { useNavigate } from 'react-router-dom'
-import { deleteBooking } from '../../service/api'
 
 //Card para mostrar reservas do feitas pelo hóspede
 
@@ -14,9 +13,6 @@ function handleEdit() {
   navigate(`/reserva/reserva/${props.id}`)
 }
 
-function handleDelete() {
-deleteBooking()
-}
   
   return (
     <div className={S.bookingCard}>
@@ -27,7 +23,6 @@ deleteBooking()
             <p className={S.checkDate}>CheckOut: {props.checkOut}</p>
             <div className={S.btnContainer}>
                 <Button text='Editar' onClick= {handleEdit} />
-                <Button text='Deletar' onClick= {handleDelete}/>
             </div>
         </div>
     </div>

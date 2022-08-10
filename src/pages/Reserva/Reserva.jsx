@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import SearchBar from '../../components/SearchBar/SearchBar'
 import Title from '../../components/Title/Title'
 import { getBookingByBookingId } from "../../service/api";
+import { deleteBooking } from "../../service/api";
 
 const Reserva = () => {
   const params = useParams();
@@ -17,6 +18,10 @@ const Reserva = () => {
     const response = await getBookingByBookingId(ID_RESERVA);
     setReservas(response);
   }
+
+  function handleDelete() {
+    deleteBooking()
+    }
 
   useEffect(() => {
     request();
