@@ -12,12 +12,12 @@ const User = () => {
     //erro ao buscar API. Método p/ buscar por id de usuário?
 
     const params = useParams();
-    const { ID_RESERVA } = params;
+    const { ID_HOSPEDE } = params;
   const [reservas, setReservas] = useState();
 
   async function request() {
     //Array vindo vazio com busca por ID (resolvido)
-    const response = await getBookingsById(ID_RESERVA)
+    const response = await getBookingsById(ID_HOSPEDE)
     setReservas(response);
   }
 

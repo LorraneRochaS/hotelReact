@@ -27,7 +27,7 @@ const Routes = () => {
         <Route path="/quartos/:tipo" element={<Room />} />
         <Route path='/quarto/:ID_QUARTO' element={<Room />} />
         <Route path='/login' element={<Login/>}/>
-        <Route path='/perfil/:ID_RESERVA' element={<User/>}/>
+        <Route path='/perfil/:ID_HOSPEDE' element={<User/>}/>
       </Switch>
     </BrowserRouter>
   );
