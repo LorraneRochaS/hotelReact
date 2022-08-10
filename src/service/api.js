@@ -69,14 +69,3 @@ export const deleteBooking = async (id) => {
 export const editBooking = async (id, body) => {
     const response = await instancia.patch(`/reserva/${id}`, body)
 };
-
-//funçoa para alterar reserva 
-export const alteraReserva = async (id, body) => {
-    try {
-      return await api.put(`/reserva/${id}`, body)
-  
-    } catch (error) {
-      console.log(error);
-      return error
-    }
-  };
