@@ -1,0 +1,57 @@
+.container {
+    display: grid;
+    place-self: center;
+    justify-content: center;
+    padding: 100px;
+    
+    
+}
+
+
+.title {
+    display: grid;
+    justify-content: center;
+    place-self: center;
+    
+}
+
+.form {
+    display: grid;
+    justify-content: center;
+    place-self: center;
+    margin: 10px;
+}
+
+.form label{
+    margin:10px;
+    justify-content: center;
+    place-self: center;
+    font-size: 20px;
+}
+
+.form input{
+    width: 300px;
+}
+
+.senha {
+    display: grid;
+    max-width: 300px;
+    justify-content: center;
+    place-self: center;   
+}
+
+.form {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #082B93;
+    color: aliceblue;
+    font-size: 12pt;
+    box-sizing: 0px 10px 40px;   
+}
+
+.form h6{
+    justify-content: center;
+    place-self: center;
+}

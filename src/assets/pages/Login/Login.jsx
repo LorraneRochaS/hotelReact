@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { postUser } from "../../../service/api";
 import Button from "../../components/Button/Button";
+import S from './Login.module.css'
 
 function Login() {
   // Estado inicial dos inputs
@@ -83,8 +84,8 @@ function Login() {
   }
 
   return (
-    <div>
-      <h1 style={{ color: "black" }}>Cadastrar Usuário</h1>
+    <div className={S.container}>
+      <h1 className={S.title} style={{ color: "black" }}>Cadastrar Usuário</h1>
 
       {status.type === "success" ? (
         <p style={{ color: "green" }}>{status.mensagem}</p>
@@ -97,7 +98,7 @@ function Login() {
         ""
       )}
 
-      <form onSubmit={addUser}>
+      <form className={S.form} onSubmit={addUser}>
         <label>Nome*: </label>
         <input
           type="text"
@@ -119,7 +120,7 @@ function Login() {
         <br />
         <br />
         <label>Senha*: </label>
-        <input
+        <input className={S.senha}
           type="password"
           name="password"
           placeholder="Senha"
