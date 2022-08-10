@@ -6,6 +6,7 @@ import Indications from "./assets/pages/Indications/Indications";
 import Room from "./assets/pages/Room/Room";
 import Login from "./assets/pages/Login/Login";
 import User from "./assets/pages/User/User";
+import Reserva from "./assets/pages/Reserva/Reserva";
 
 /*
 PROPS
@@ -28,6 +29,7 @@ const Routes = () => {
         <Route path='/quarto/:ID_QUARTO' element={<Room />} />
         <Route path='/login' element={<Login/>}/>
         <Route path='/perfil/:ID_RESERVA' element={<User/>}/>
+        <Route path='/reserva/:ID_HOSPEDE' element={<Reserva/>}/>
       </Switch>
     </BrowserRouter>
   );
