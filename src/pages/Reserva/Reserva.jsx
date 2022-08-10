@@ -1,5 +1,4 @@
 import React from "react";
-import Booking from "../../components/Booking/Booking";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
@@ -7,6 +6,7 @@ import SearchBar from '../../components/SearchBar/SearchBar'
 import Title from '../../components/Title/Title'
 import { getBookingByBookingId } from "../../service/api";
 import { deleteBooking } from "../../service/api";
+import Form from "../../components/Form/Form";
 
 const Reserva = () => {
   const params = useParams();
@@ -40,14 +40,13 @@ const Reserva = () => {
           reservas[0].map((reserva, key) => {
             return (
               //Mudar nome dos atributos no cdg para fazer funcionar?
-              <Booking
-                src="https://cf.bstatic.com/images/hotel/840x460/631/63184497.jpg"
-                descr="img quarto"
+              <Form
                 key={key}
-                idRoom={reserva.ID_QUARTO}
-                checkOut={reserva.CHECKOUT}
-                checkIn={reserva.CHECKIN}
-                id={reserva.ID_RESERVA}
+                quarto={reserva.ID_QUARTO}
+                hospede={reserva.ID_HOSPEDE}
+                checkout={reserva.CHECKOUT}
+                checkin={reserva.CHECKIN}
+                reserva={reserva.ID_RESERVA}
               />
             );
           })}
