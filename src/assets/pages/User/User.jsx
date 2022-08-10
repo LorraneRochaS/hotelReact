@@ -6,26 +6,26 @@ import Booking from '../../components/Booking/Booking'
 import SearchBar from '../../components/SearchBar/SearchBar'
 import Title from '../../components/Title/Title'
 import { getBookingsById } from '../../../service/api'
-import { getBookings } from '../../../service/api'
 
 const User = () => {
 
     //erro ao buscar API. Método p/ buscar por id de usuário?
 
     const params = useParams();
-    // const { ID_RESERVA } = params;
+    const { ID_RESERVA } = params;
   const [reservas, setReservas] = useState();
 
   async function request() {
-    const response = await getBookings()
-    //Array vindo vazio com busca por ID
-    //const response = await getBookingsById(params.reserva)
+    //Array vindo vazio com busca por ID (resolvido)
+    const response = await getBookingsById(ID_RESERVA)
     setReservas(response);
+    
   }
 
   useEffect(() => {
     request();
   }, []);
+  console.log(reservas);
 
   return (
     <div>
@@ -35,14 +35,14 @@ const User = () => {
       <SearchBar />
       <h3>Últimas Reservas:</h3>
       <div>{!!reservas &&
-        reservas.map((reserva, key) => {
+        reservas[0].map((reserva, key) => {
           return (
 
             //Mudar nome dos atributos no cdg para fazer funcionar?
             <Booking
               src="https://cf.bstatic.com/images/hotel/840x460/631/63184497.jpg"
               descr="img quarto"
-              key={reserva.ID_RESERVA}
+              key={key}
               idRoom={reserva.ID_QUARTO}
               checkOut={reserva.CHECKOUT}
               checkIn={reserva.CHECKIN}
