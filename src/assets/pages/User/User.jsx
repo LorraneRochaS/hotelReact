@@ -25,7 +25,7 @@ const User = () => {
   useEffect(() => {
     request();
   }, []);
-  console.log(reservas);
+//   console.log(reservas);
 
   return (
     <div>
