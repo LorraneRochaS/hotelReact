@@ -7,6 +7,7 @@ import Room from "./pages/Room/Room";
 import Login from "./pages/Login/Login";
 import User from "./pages/User/User";
 import Reserva from './pages/Reserva/Reserva'
+import NovaReserva from "./pages/NovaReserva/NovaReserva";
 
 /*
 PROPS
@@ -30,6 +31,7 @@ const Routes = () => {
         <Route path='/login' element={<Login/>}/>
         <Route path='/perfil/:ID_HOSPEDE' element={<User/>}/>
         <Route path='/reserva/reserva/:ID_RESERVA' element={<Reserva/>}/>
+        <Route path='/reserva' element={<NovaReserva/>}/>
       </Switch>
     </BrowserRouter>
   );
