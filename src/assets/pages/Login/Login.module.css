@@ -1,4 +1,41 @@
-.title{
-   display: grid;
-   align-content: center;
+.container {
+    display: grid;
+    place-self: center;
+    justify-content: center;
+    padding: 100px;
+    border: solid;
+}
+
+
+.title {
+    display: grid;
+    justify-content: center;
+    place-self: center;
+}
+
+.form {
+    display: grid;
+    justify-content: center;
+    place-self: center;
+    margin: 10px;
+}
+
+.form label{
+    margin:10px;
+    justify-content: center;
+    place-self: center;
+    font-size: 20px;
+}
+
+.form input{
+    width: 300px;
+}
+
+.senha {
+    display: grid;
+    max-width: 300px;
+    justify-content: center;
+    place-self: center;
+
+   
 }

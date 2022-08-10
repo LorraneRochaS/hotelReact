@@ -84,7 +84,7 @@ function Login() {
   }
 
   return (
-    <div>
+    <div className={S.container}>
       <h1 className={S.title} style={{ color: "black" }}>Cadastrar Usuário</h1>
 
       {status.type === "success" ? (
@@ -98,7 +98,7 @@ function Login() {
         ""
       )}
 
-      <form onSubmit={addUser}>
+      <form className={S.form} onSubmit={addUser}>
         <label>Nome*: </label>
         <input
           type="text"
@@ -120,7 +120,7 @@ function Login() {
         <br />
         <br />
         <label>Senha*: </label>
-        <input
+        <input className={S.senha}
           type="password"
           name="password"
           placeholder="Senha"
