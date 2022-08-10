@@ -3,7 +3,8 @@
     place-self: center;
     justify-content: center;
     padding: 100px;
-    border: solid;
+    
+    
 }
 
 
@@ -11,6 +12,7 @@
     display: grid;
     justify-content: center;
     place-self: center;
+    
 }
 
 .form {
@@ -46,6 +48,10 @@
     background: #082B93;
     color: aliceblue;
     font-size: 12pt;
-    box-sizing: 0px 10px 40px;
-    
+    box-sizing: 0px 10px 40px;   
+}
+
+.form h6{
+    justify-content: center;
+    place-self: center;
 }
