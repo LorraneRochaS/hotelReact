@@ -34,8 +34,9 @@ const Reserva = () => {
     setOldData({ ...oldData, [key]: value });
   }
 
-  function handleDelete() {
-    deleteBooking();
+  async function handleDelete() {
+    const response = await deleteBooking();
+    console.log(response);
   }
 
   useEffect(() => {
