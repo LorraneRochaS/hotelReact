@@ -19,17 +19,18 @@ const NovaReserva = () => {
   const request = async (e) => {
     e.preventDefault();
     const response = await postBooking(newData);
-    setData({ ID_HOSPEDE: newData.ID_HOSPEDE,
-    ID_QUARTO: newData.ID_QUARTO,
-    CHECKIN: newData.CHECKIN,
-    CHECKOUT: newData.CHECKOUT});
+    setData({
+      ID_HOSPEDE: newData.ID_HOSPEDE,
+      ID_QUARTO: newData.ID_QUARTO,
+      CHECKIN: newData.CHECKIN,
+      CHECKOUT: newData.CHECKOUT,
+    });
     console.log(response);
   };
 
   return (
     <div>
       <form action="">
-
         <input
           type="number"
           name="quarto"
@@ -64,7 +65,9 @@ const NovaReserva = () => {
           onChange={(e) => handleChange(e, "CHECKOUT")}
         />
 
-        <button onClick={request}>Adicionar</button>
+        <button className={S.button} onClick={request}>
+          <p className={S.text}>Adicionar</p>
+        </button>
       </form>
     </div>
   );
