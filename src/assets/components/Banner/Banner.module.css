@@ -7,7 +7,7 @@
   min-width: 425px;
   width: 100%;
   width: 1000px;
-  min-height: 195px;
+  min-height: 250px;
   object-fit: cover;
-  border-radius: 4px;
+  border-radius: 10px;
 }
