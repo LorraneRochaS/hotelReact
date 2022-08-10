@@ -41,7 +41,7 @@ export const postUser = async (guest) => {
 //funções para adicionar reservas, editar e deletar na API
 export const getBookings = async () => {
     const response = await instancia.get('/reserva')
-    const json = await response.data['Reservas selecionadas'];
+    const json = await response.data.reserva;
     console.log(json)
     return json
 
@@ -49,9 +49,9 @@ export const getBookings = async () => {
 
 //Problemas para pegar reserva por id (resolvido)
 //Descobrir como substituir index 0 por parâmetro caso necessário, se vier vários resultados da API ao criar método get por id de hóspede
-export const getBookingsById = async (id) => {
+export const getBookingsById = async (id, index) => {
     const response = await instancia.get(`/reserva/${id}`)
-    const json = await response.data['Reserva selecionada'][0];
+    const json = await response.data.reserva;
     console.log(json)
     return [json]
 }
