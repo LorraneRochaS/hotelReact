@@ -1,0 +1,65 @@
+.root {
+  margin-top: 30px;
+    background-color: var(--color-three);
+    margin-bottom: 10px;
+
+}
+
+.home {
+  display: grid;
+  margin: 0 auto;
+  max-width: 1000px;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content min-content min-content;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  box-shadow: 3px 3px 10px rgb(172, 172, 172), -3px -3px 10px rgb(172, 172, 172);
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: var(--color-light);
+}
+
+.banner {
+  grid-area: 1 / 1 / 2 / 2;
+  grid-template-rows: min-content;
+}
+.searchBarCtn {
+  grid-area: 2 / 1 / 3 / 2;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background-color: var(--color-light);
+  padding-bottom: 30px;
+}
+.convenienceCtn {
+  grid-area: 3 / 1 / 4 / 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.convTitle {
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: var(--color-light);
+}
+.conveniences {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  width: 80%;
+  padding-bottom: 30px;
+
+}
+
+.promoCtn {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;    
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--color-light);
+    padding-bottom: 40px;
+}
+
+

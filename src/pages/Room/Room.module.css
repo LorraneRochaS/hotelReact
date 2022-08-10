@@ -1,0 +1,33 @@
+.father {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: center;
+    
+
+}
+
+.flexCtn1 {
+    display: flex;
+    width: 1000px;
+    justify-content: space-around;
+    margin: 20px auto;
+    
+    
+}
+
+.flexCtn2 {
+    display: flex;
+    width: 700px;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.flexCtn3 {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    margin: 0 auto;
+    text-align: justify;
+}
