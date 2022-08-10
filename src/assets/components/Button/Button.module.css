@@ -4,15 +4,15 @@
   align-items: center;
   justify-content: center;
   padding: 15px 25px;
-  background-color: #ff7b07; 
+  background-color: var(--color-two); 
   height: 40px;  
   box-shadow: 0px 4px 0px #a24d03;
   border-radius: 10px;
-  border: 0 solid #ff7b07;
+  border: 0 solid var(--color-two); 
 }
 
 .text {
-  color: #efefef;
+  color: var(--color-light);
   font-weight: 700;
   font-size: 16px;
 }
