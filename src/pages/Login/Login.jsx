@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { postUser } from "../../service/api";
 import Button from "../../components/Button/Button";
 import S from './Login.module.css'
+import { Link } from "react-router-dom";
 
 function Login() {
   // Estado inicial dos inputs
@@ -133,7 +134,9 @@ function Login() {
         <h6>* Campos obrigatórios</h6>
         <br />
         <br />
-        <Button text="Cadastrar" onCLick={addUser}/>
+        {/* após validação e inserção de dados na api, trocar 5 por params id */}
+        <Link to="/perfil/5"><Button text="Cadastrar" onCLick={addUser}/></Link>
+        
       </form>
     </div>
   );
