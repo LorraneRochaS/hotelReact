@@ -6,6 +6,7 @@ import Booking from '../../components/Booking/Booking'
 import SearchBar from '../../components/SearchBar/SearchBar'
 import Title from '../../components/Title/Title'
 import { getBookingsById } from '../../service/api'
+import Button from '../../components/Button/Button'
 
 const User = () => {
 
@@ -30,9 +31,7 @@ const User = () => {
   return (
     <div>
       <Title title="Bem vindo(a), Nahla"/>
-
-      <h3>Nova Reserva</h3>
-      <SearchBar />
+      <Button text="nova reserva"/>
       <h3>Últimas Reservas:</h3>
       <div>{!!reservas &&
         reservas[0].map((reserva, key) => {
