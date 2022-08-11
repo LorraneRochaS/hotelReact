@@ -8,6 +8,8 @@ import SearchBar from '../../components/SearchBar/SearchBar'
 import Title from '../../components/Title/Title'
 import { getBookingsById } from '../../service/api'
 import Button from '../../components/Button/Button'
+import S from './User.module.css'
+
 
 const User = () => {
 
@@ -36,7 +38,7 @@ function handleNavigate() {
 //   console.log(reservas);
 
   return (
-    <div>
+    <div className={S.user}>
       <Title title="Bem vindo(a), Nahla"/>
       <Button text="nova reserva" onClick={handleNavigate}/>
       <h3>Últimas Reservas:</h3>

@@ -1,0 +1,8 @@
+.user{
+    display: grid;
+    justify-content: center;
+    place-self: center;
+    padding: 100px;
+
+
+}
