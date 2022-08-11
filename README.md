@@ -34,12 +34,18 @@ $ npm install
 $ npm run dev
 ```
 <h1>Demonstração</h1>
-
-<img width="500" alt="image" src="src/components/img readme/home.jpg">
-<img width="500" alt="image" src="src/components/img readme/quartos.jpg">
-<img width="500" alt="image" src="src/components/img readme/individual.jpg">
-<img width="500" alt="image" src="src/components/img readme/cadastro.jpg">
+<div align='center'>
+<h3> Home <br>
+<img width="500" alt="image" src="src/components/img readme/home.jpg"><br>
+Todos os quartos <br>
+<img width="500" alt="image" src="src/components/img readme/quartos.jpg"> <br>
+Quarto individual <br>
+<img width="500" alt="image" src="src/components/img readme/individual.jpg"> <br>
+Página de Cadastro<br>
+<img width="500" alt="image" src="src/components/img readme/cadastro.jpg"> <br>
+Página do usuário <br>
 <img  width="200" alt="image" src="src/components/img readme/user.jpg">
+<br>
 
 
 <h1 align='center'>Contribuidores</h1>
