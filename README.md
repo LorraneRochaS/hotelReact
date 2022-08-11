@@ -39,6 +39,7 @@ $ npm run dev
 <img width="500" alt="image" src="src/components/img readme/quartos.jpg">
 <img width="500" alt="image" src="src/components/img readme/individual.jpg">
 <img width="500" alt="image" src="src/components/img readme/cadastro.jpg">
+<img  width="200" alt="image" src="src/components/img readme/user.jpg">
 
 
 <h1 align='center'>Contribuidores</h1>
